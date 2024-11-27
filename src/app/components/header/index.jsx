@@ -21,7 +21,7 @@ const navlinksdata = [
     { link: "/", link_label: "Home" },
     { link: "/about-us", link_label: "About Us" },
     { link: "/services", link_label: "Services" },
-    { link: "#partners", link_label: "Partners" },
+    { link: "/#patners-section", link_label: "Partners" },
     { link: "https://www.tatatelebusiness.com/", link_label: "Tata" },
     { link: "/course", link_label: "Course" },
     { link: "/blog", link_label: "Blog" },

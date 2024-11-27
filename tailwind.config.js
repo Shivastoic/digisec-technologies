@@ -15,6 +15,7 @@ module.exports = {
 			},
 			backgroundImage: {
                 "hero-section": "url('/assets/images/hero-bg-bottom.png'), url('/assets/images/hero-bg.png'), var(--gradient-1)",
+                "footer-bg": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
             },
 			colors: {
 				"blue_light": "#3E3178",

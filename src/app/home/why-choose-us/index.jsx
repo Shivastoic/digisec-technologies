@@ -42,7 +42,7 @@ export default function WhyChooseUs(){
         <section className="relative py-14 md:py-24 bg-neutral-50">
             <Container>
                 <div className="flex flex-col gap-12 relative z-10">
-                    <h2 className="text-4xl md:text-5xl text-yellow_title font-sora font-medium">{ data.title }</h2>
+                    <h2 className="text-4xl md:text-5xl text-center text-yellow_title font-sora font-semibold">{ data.title }</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {
 
