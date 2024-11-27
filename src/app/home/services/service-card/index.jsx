@@ -6,14 +6,14 @@ export default function ServiceCard({ src, title, description, link }){
 
     return (
 
-        <div className="flex flex-col gap-2 bg-white shadow-md rounded-xl overflow-hidden">
-            <div className="w-full h-full aspect-[3/2] overflow-hidden">
+        <div className="flex flex-col gap-2 bg-white shadow-better_boxshadow rounded-xl overflow-hidden">
+            <div className="w-full h-full aspect-[3/2] overflow-hidden px-2 pt-2">
                 <Image 
                     src={ src }
                     alt=""
                     width={ 1000 }
                     height={ 1000 }
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                 />
             </div>
             <div className="flex flex-col gap-4 p-4">

@@ -30,7 +30,7 @@ const cardData = [
     {
 
         src: "/assets/images/services/audit.jpg",
-        link: "/services/",
+        link: "/services/security-consulting-audit",
         title: "Security Consulting & Audit",
         description: "Help organizations to meet regulatory compliance, industry standards liks ISO 27001, security assessment of your network, applications and cloud infrastructure",
 
@@ -49,9 +49,10 @@ export default function ServiceSection(){
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {
 
-                            cardData.map( ( data ) => (
+                            cardData.map( ( data, index ) => (
 
-                                <ServiceCard 
+                                <ServiceCard
+                                    key={ index }
                                     src={ data.src }
                                     title={ data.title }
                                     description={ data.description }
