@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --royal-blue-dark: hsl(231, 68%, 21%);
+    --ksu-purple: hsl(275, 54%, 33%);
+    --razzmatazz: hsl(335, 87%, 51%);
+    --rajah: hsl(29, 99%, 67%);
+    --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0%, var(--ksu-purple) 51%, var(--royal-blue-dark) 100%);
+    --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+html{
+
+    scroll-behavior: smooth;
+
+}
