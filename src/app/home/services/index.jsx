@@ -46,7 +46,7 @@ export default function ServiceSection(){
             <Container>
                 <div className="flex flex-col gap-8">
                     <h2 className="text-4xl md:text-5xl text-yellow_title font-sora font-medium">{ data.title }</h2>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {
 
                             cardData.map( ( data, index ) => (

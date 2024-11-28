@@ -22,6 +22,8 @@ const partnerData = [
     "/assets/images/partners/check.jpg",
     "/assets/images/partners/ntt.jpg",
     "/assets/images/partners/sify.png",
+    "/assets/images/partners/tata.jpg",
+    "/assets/images/partners/scale.png",
 
 ]
 

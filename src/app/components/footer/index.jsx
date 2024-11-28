@@ -24,35 +24,32 @@ export default function Footer(){
 
     return (
 
-        <footer className="">
-            <div className="py-14 md:py-20 bg-footer-bg">
+        <footer className="bg-footer-bg">
+            <div className="py-14 md:py-20">
                 <Container>
                     <div className="flex flex-wrap gap-10 justify-between">
                         <div className="flex flex-col  gap-6">
                             <h3 className="text-white text-2xl md:text-3xl font-sora font-semibold">Registered Address</h3>
                             <div className="space-y-2">
-                                <p className="text-neutral-50 font-sora font-medium">Digisec Technologies</p>
-                                <p className="text-neutral-50 font-sora font-medium">62 C, MIG, Sector-100, Noida, 201301</p>
-                                <p className="text-neutral-50 font-sora font-medium">contact@digisectechnologies.com</p>
-                                <p className="text-neutral-50 font-sora font-medium">Phone: 0120-4541812</p>
+                                <p className="text-neutral-200 font-sora font-medium">Digisec Technologies</p>
+                                <p className="text-neutral-200 font-sora font-medium">62 C, MIG, Sector-100, Noida, 201301</p>
+                                <p className="text-neutral-200 font-sora font-medium">contact@digisectechnologies.com</p>
+                                <p className="text-neutral-200 font-sora font-medium">Phone: 0120-4541812</p>
                             </div>
                         </div>
                         <div className="flex flex-col gap-6">
-                            <h3 className="text-white text-2xl md:text-3xl font-sora font-semibold">Pages</h3>
-                            <ul className="flex flex-col justify-center gap-2">
-                                {
-
-                                    navlinksdata.map( ( data, index ) => (
-
-                                        <li key={ index } className="text-neutral-200 hover:text-white hover:underline underline-offset-4 duration-200 font-sora font-medium">
-                                            <Link href={ data.link }>
-                                                { data.link_label }
-                                            </Link>
-                                        </li>
-
-                                    ))
-
-                                }
+                            <h3 className="text-white text-2xl md:text-3xl md:text-center font-sora font-semibold">Pages</h3>
+                            <ul className="flex flex-wrap max-w-96 max-md:pl-4 md:justify-center gap-6">
+                                {navlinksdata.map((data, index) => (
+                                    <li
+                                        key={index}
+                                        className="relative text-neutral-200 hover:text-white hover:underline underline-offset-4 duration-200 font-sora font-medium"
+                                    >
+                                        <span className="absolute left-[-16px] text-neutral-200">•</span>
+                                        <Link href={data.link}>{data.link_label}</Link>
+                                        {/* Add a dot after each list item */}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                         <div className="flex flex-col gap-6">
@@ -62,8 +59,8 @@ export default function Footer(){
                     </div>
                 </Container>
             </div>
-            <div className="bg-white p-2 flex items-center justify-center">
-                <p className="text-neutral-700 font-sora font-medium">{ data.copyright_text }</p>
+            <div className="p-4 border-t border-white flex items-center justify-center">
+                <p className="text-white font-sora font-medium">{ data.copyright_text }</p>
             </div>
         </footer>
 
