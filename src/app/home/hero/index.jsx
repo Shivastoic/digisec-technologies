@@ -12,7 +12,7 @@ const data = {
 
     title: "Digisec Technologies",
     subtitle: "We are your trusted partner for digital transformation and security, empowering businesses to innovate and stay secure in a rapidly evolving world.",
-    hero_img_src: "/assets/images/hero-img.svg",
+    hero_img_src: "/assets/images/hero-banner.png",
     contact_link: "/contact-us",
     contact_lable: "Get in touch",
 

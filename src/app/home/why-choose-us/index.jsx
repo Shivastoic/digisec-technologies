@@ -48,7 +48,7 @@ export default function WhyChooseUs(){
 
                             cardData.map(( data, index ) => (
 
-                                <div key={ index } className="bg-white rounded-xl shadow-better_boxshadow flex flex-col gap-6 p-6">
+                                <div key={ index } className="bg-white rounded-xl shadow-better_boxshadow flex flex-col gap-6 p-6 group hover:bg-blue_light duration-200">
                                     <Image 
                                         src={ data.src }
                                         alt=""
@@ -57,8 +57,8 @@ export default function WhyChooseUs(){
                                         className="size-16"
                                     />
                                     <div className="flex flex-col gap-3">
-                                        <h3 className="text-2xl font-medium font-sora">{ data.title }</h3>
-                                        <p className="text-lg text-slate-500 font-syne">{ data.description }</p>
+                                        <h3 className="text-2xl font-medium font-sora group-hover:text-white duration-100">{ data.title }</h3>
+                                        <p className="text-lg text-slate-500 font-syne group-hover:text-neutral-200 duration-100">{ data.description }</p>
                                     </div>
                                 </div>
 
