@@ -22,9 +22,9 @@ export default function DevCard({ src, title, description, features, tech }){
                 <ul className="list-disc pl-6">
                     {
 
-                        features.map( ( feature ) => (
+                        features.map( ( feature, index ) => (
 
-                            <li className="text-neutral-600 group-hover:text-neutral-200 duration-100 font-sora">{ feature }</li>
+                            <li key={ index } className="text-neutral-600 group-hover:text-neutral-200 duration-100 font-sora">{ feature }</li>
 
                         ))
 
