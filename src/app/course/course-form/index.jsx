@@ -37,7 +37,7 @@ export default function CourseForm() {
 		try {
 
 			const response = await fetch(
-				process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL,
+				"https://script.google.com/macros/s/AKfycbw2iAXxIUUMJI0HHoWs5B7jgblMKpOmLVmauDYCXhLZbVmu9qLiwUJhsFU06mhH3EAb/exec",
 				{
 					method: "POST",
 					body: formDatab,
