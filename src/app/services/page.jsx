@@ -1,6 +1,15 @@
 // IMPORT COMPONENTS
 import ServiceSection from "@/app/home/services/index"
 
+// METADATA FOR SERVICES PAGE
+export const metadata = {
+
+    title: "Services | Digisec Technologies",
+    description: "",
+    keywords: "",
+
+}
+
 export default function Services(){
 
     return(

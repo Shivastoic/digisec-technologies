@@ -7,6 +7,15 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			animation: {
+				scroll: 'scroll 35s linear infinite', // Adjust duration as needed
+			},
+			keyframes: {
+				scroll: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100%)' },
+				},
+			},
 			fontFamily: {
 				geist: ['var(--font-geist)', 'sans-serif'],
         		geist_mono: ['var(--font-geist-mono)', 'sans-serif'],
@@ -16,7 +25,11 @@ module.exports = {
 			backgroundImage: {
                 "hero-section": "url('/assets/images/hero-bg-bottom.png'), url('/assets/images/hero-bg.png'), var(--gradient-1)",
                 "footer-bg": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
+                "development-bg": "url('/assets/images/hero-bg.png'), var(--gradient-2)",
             },
+			backgroundColor: {
+				"red_gradient": "var(--gradient-2)",
+			},
 			colors: {
 				"blue_light": "#3E3178",
 				"blue_logo": "#73b5e8",

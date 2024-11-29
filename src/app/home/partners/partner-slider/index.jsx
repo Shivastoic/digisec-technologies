@@ -13,16 +13,16 @@ import Image from "next/image"
 export default function PartnerSlider({ partnerData }) {
     return (
         <Swiper 
-            className="mySwiper !pt-10 !pb-16"
+            className="mySwiperClient !pt-10 !pb-16"
+            a11y={ false }
             loop={true}
+            speed={ 2500 }
             autoplay={{
-                delay: 1000,
+                delay: 5,
                 disableOnInteraction: false,
             }}
+            freeMode={ true }
             modules={[Autoplay, Pagination]}
-            pagination={{
-                clickable: true, // Makes dots clickable
-            }}
             spaceBetween={40}
             breakpoints={{
                 0: {
