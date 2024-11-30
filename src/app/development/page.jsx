@@ -1,6 +1,7 @@
 import Container from "@/app/components/container"
 import DevCard from "@/app/development/dev-card/index"
 import Image from "next/image"
+import ServiceRequestDemo from "../services/components/service-page-request-demo"
 
 // METADATA FOR DEVELOPMENT PAGE
 export const metadata = {
@@ -15,6 +16,8 @@ export const metadata = {
 const data = {
 
     title: "Development Services __",
+    request_src: "/assets/images/services/cyber-security/cyber-request.jpg",
+    request_description: "Digisec Technologies offers a wide range of services including web development (full stack), app development, AI tools and analysis, and social media marketing to help your business grow. Our expert team ensures that each solution is tailored to meet your needs, driving efficiency and innovation. Feel free to reach out to us anytime for professional assistance!",
 
 }
 
@@ -123,7 +126,7 @@ export default function Development(){
     return (
 
         <section className="bg-neutral-100 relative py-24">
-            <div className="relative z-20">
+            <div className="relative z-20 space-y-16">
                 <Container>
                     <div className="flex flex-col gap-10 py-16">
                         <h2 className="text-4xl md:text-5xl font-sora font-semibold text-yellow_title">{ data.title }</h2>
@@ -146,8 +149,13 @@ export default function Development(){
 
                             }
                         </div>
+                        
                     </div>
                 </Container>
+                <ServiceRequestDemo
+                    src={ data.request_src }
+                    description={ data.request_description }
+                />
             </div>
             <div className="hidden md:block absolute bottom-[800px] right-44">
                 <Image 
