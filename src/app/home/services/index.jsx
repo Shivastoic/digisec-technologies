@@ -35,6 +35,14 @@ const cardData = [
         description: "Help organizations to meet regulatory compliance, industry standards liks ISO 27001, security assessment of your network, applications and cloud infrastructure",
 
     },
+    {
+
+        src: "/assets/images/services/testing.avif",
+        link: "/services/vapt-services",
+        title: "VAPT services",
+        description: "Empowering businesses to safeguard their digital assets and strengthen their cybersecurity posture through expert Vulnerability Assessment and Penetration Testing (VAPT) services, ensuring resilience against evolving threats.",
+
+    },
 
 ]
 
