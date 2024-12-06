@@ -67,27 +67,15 @@ const dataOne = {
 
 }
 
-const requestData = {
-
-    src: "/assets/images/services/security-consulting/request.jpg",
-    description: "Digisec Technologies is offering various kinds of IT infrastructure and cloud solutions, cyber security solutions, security services solutions, and professional enterprise services to keep you up with your business. Feel free to contact us anytime.",
-
-}
-
-
 export default function SecurityConsultingAudit(){
 
     return (
 
-        <section className="py-28">
+        <section className="">
             <ServicePageTemplate 
                 title={ dataOne.title }
                 description={ dataOne.description }
                 cardData={ dataOne.cardData }
-            />
-            <ServiceRequestDemo 
-                src={ requestData.src }
-                description={ requestData.description }
             />
         </section>
 

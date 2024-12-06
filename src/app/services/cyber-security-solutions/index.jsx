@@ -1,5 +1,4 @@
 import ServicePageTemplate from "@/app/services/components/service-page-template/index"
-import ServiceRequestDemo from "@/app/services/components/service-page-request-demo"
 
 // HARDCODED DATA
 const dataOne = {
@@ -149,18 +148,11 @@ const dataTwo = {
 
 }
 
-const requestData = {
-
-    src: "/assets/images/services/cyber-security/cyber-request.jpg",
-    description: "Digisec Technologies is offering various kinds of IT infrastructure and cloud solutions, cyber security solutions, security services solutions, and professional enterprise services to keep you up with your business. Feel free to contact us anytime.",
-
-}
-
 export default function CyberSecuritySolutions(){
 
     return (
 
-        <section className="py-28">
+        <section className="">
             <ServicePageTemplate 
                 title={ dataOne.title }
                 description={ dataOne.description }
@@ -170,10 +162,6 @@ export default function CyberSecuritySolutions(){
                 title={ dataTwo.title }
                 description={ dataTwo.description }
                 cardData={ dataTwo.cardData }
-            />
-            <ServiceRequestDemo 
-                src={ requestData.src }
-                description={ requestData.description }
             />
         </section>
 

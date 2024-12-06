@@ -1,7 +1,7 @@
 // IMPORT COMPONENTS
 import Link from "next/link"
 
-export default function MobileNav({ navlinksdata, navdata, open_state, pathname }){
+export default function MobileNav({ navlinksdata, contact_link, contact_label, open_state, pathname }){
 
     return (
 
@@ -17,9 +17,9 @@ export default function MobileNav({ navlinksdata, navdata, open_state, pathname 
                 ))
             
             }
-            <Link href={ navdata.contact_link }>
-                <button className={`hidden lg:block border-2 px-6 py-2 rounded-full text-sm font-sora font-medium duration-200`} >
-                    { navdata.contact_label }
+            <Link href={ contact_link }>
+                <button className={`w-full bg-blue_light text-white px-6 py-2 rounded-full text-sm font-sora font-medium duration-200`} >
+                    { contact_label }
                 </button>
             </Link>
         </ul>
