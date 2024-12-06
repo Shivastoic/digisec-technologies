@@ -20,7 +20,7 @@ const navdata = {
 const navlinksdata = [
     { link: "/", link_label: "Home" },
     { link: "/about-us", link_label: "About Us" },
-    { link: "/services", link_label: "Services" },
+    { link: "/services", link_label: "Services Offering" },
     { link: "/#patners-section", link_label: "Partners" },
     { link: "https://www.tatatelebusiness.com/", link_label: "Tata Tele" },
     { link: "/course", link_label: "C.E.H. Course" },
@@ -124,7 +124,8 @@ export default function Header() {
                     </div>
                     <MobileNav 
                         navlinksdata={ navlinksdata }
-                        navdata={ navdata }
+                        contact_label={ navdata.contact_label }
+                        contact_link={ navdata.contact_link }
                         open_state={ isNavOpen }
                         pathname={ pathname }
                     />

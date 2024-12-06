@@ -16,13 +16,13 @@ export default function ServicePageCard({ src, title, list }) {
                 />
             </div>
             <div className="flex flex-col gap-4 p-4">
-                <h3 className="text-2xl text-black font-sora font-medium">{ title }</h3>
-                <ul className="space-y-1 list-disc pl-5">
+                <h3 className="text-xl md:text-2xl text-black font-sora font-medium">{ title }</h3>
+                <ul className="space-y-1 list-disc pl-4">
                     {
 
                         list.map( ( item, index ) => (
 
-                            <li key={ index } className="text-neutral-500 font-sora">
+                            <li key={ index } className="text-sm md:text-base text-neutral-500 font-sora">
                                 { item }
                             </li>
 
