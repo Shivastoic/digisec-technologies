@@ -23,7 +23,7 @@ module.exports = {
 				sora: ['var(--font-sora)', 'sans-serif'],
 			},
 			backgroundImage: {
-                "hero-section": "url('/assets/images/hero-bg-bottom.png'), url('/assets/images/hero-bg.png'), var(--gradient-1)",
+                "hero-section": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
                 "footer-bg": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
                 "development-bg": "url('/assets/images/hero-bg.png'), var(--gradient-2)",
             },
@@ -31,6 +31,8 @@ module.exports = {
 				"red_gradient": "var(--gradient-2)",
 			},
 			colors: {
+				"blue_dark": "var(--royal-blue-dark)",
+				"blue_dark_opac": "#30396F",
 				"blue_light": "#3E3178",
 				"blue_logo": "#73b5e8",
 				"yellow_logo": "#f7df59",
@@ -38,8 +40,10 @@ module.exports = {
 			},
 			boxShadow: {
 				better_boxshadow: '0px 7px 29px 0px rgba(100, 100, 111, 0.2)',
+				big_boxshadow: "0px 22px 70px 4px rgba(28, 31, 96, 0.56)",
 			},
 		},
 	},
 	plugins: [],
 };
+// "hero-section": "url('/assets/images/hero-bg-bottom.png'), url('/assets/images/hero-bg.png'), var(--gradient-1)",

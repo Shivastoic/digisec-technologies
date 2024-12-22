@@ -1,6 +1,7 @@
 import "./globals.css";
 
 // IMPORT NEXT COMPONENTS
+import NextTopLoader from "nextjs-toploader";
 import Header from "@/app/components/header/index";
 import Footer from "@/app/components/footer/index";
 
@@ -62,6 +63,10 @@ export default function RootLayout({ children }) {
 
 		<html lang="en">
 			<body className={`${sora.variable} ${syne.variable} antialiased`}>
+                <NextTopLoader 
+                    color="#FF885B"
+                    showSpinner={false}
+                />
 				<Header />
 				<main>{ children }</main>
 				<Footer />

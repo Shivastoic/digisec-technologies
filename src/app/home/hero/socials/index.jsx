@@ -44,8 +44,8 @@ export default function SocialLink(){
                 links.map( ( link, index ) => (
 
                     <Link key={ index } href={ link.link } target="_blank">
-                        <div className="p-2 border-2 border-white rounded-full group hover:border-black hover:bg-white duration-300">
-                            <span className="text-white md:text-lg group-hover:text-blue_light duration-200">{ link.icon }</span>
+                        <div className="p-2 rounded-full group hover:border-black hover:bg-white duration-300">
+                            <span className="text-white text-lg md:text-xl group-hover:text-blue_light duration-200">{ link.icon }</span>
                         </div>
                     </Link>
 
