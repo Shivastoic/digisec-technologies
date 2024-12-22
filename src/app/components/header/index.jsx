@@ -58,7 +58,7 @@ export default function Header() {
     const headerClass =
         pathname === "/"
             ? isScrolled
-                ? "bg-white shadow-md"
+                ? "bg-white/10 backdrop-blur-md shadow-md"
                 : "bg-transparent"
             : "bg-white shadow-md"
 
@@ -83,8 +83,8 @@ export default function Header() {
             : "border-blue_light text-black hover:bg-blue_light hover:text-white"
 
     return (
-        <header className={`fixed top-0 w-full z-50 transition-colors duration-300 ${headerClass}`}>
-            <Container>
+        <header className={`fixed top-0 w-full z-50 transition-colors duration-300 lg:px-6 px-4 ${headerClass}`}>
+            {/* <Container> */}
                 <nav className="flex items-center justify-between py-2">
                     <Link href={navdata.logo_link}>
                         <Image
@@ -95,12 +95,12 @@ export default function Header() {
                             className="w-full h-16 md:h-20"
                         />
                     </Link>
-                    <ul className="hidden lg:flex items-center gap-6">
+                    {/* <ul className="hidden lg:flex items-center gap-6">
                         {
                         
                             navlinksdata.map((data, index) => (
 
-                                <li key={index} className={`font-medium font-sora duration-150 ${linkClass(data.link)}`}>
+                                <li key={index} className={`font-medium duration-150 ${linkClass(data.link)}`}>
                                     <Link href={data.link}>{data.link_label}</Link>
                                 </li>
 
@@ -112,9 +112,9 @@ export default function Header() {
                                 {navdata.contact_label}
                             </button>
                         </Link>
-                    </ul>
-                    <div className="lg:hidden bg-white shadow-better_boxshadow rounded-full p-2 z-30 cursor-pointer" onClick={() => setIsNavOpen((prev) => !prev) }>
-                        <span className="text-black text-lg">
+                    </ul> */}
+                    <div className={`size-8 md:size-12 flex items-center justify-center shadow-better_boxshadow rounded-full p-2 z-30 cursor-pointer ${ isNavOpen ? "bg-blue_dark" : "bg-white" }`} onClick={() => setIsNavOpen((prev) => !prev) }>
+                        <span className={`text-lg md:text-2xl ${ isNavOpen ? "text-white" : "text-black"}`}>
                             {
 
                                 isNavOpen ? <IoClose /> : <IoMenu />
@@ -127,10 +127,11 @@ export default function Header() {
                         contact_label={ navdata.contact_label }
                         contact_link={ navdata.contact_link }
                         open_state={ isNavOpen }
+                        setIsNavOpen={ setIsNavOpen }
                         pathname={ pathname }
                     />
                 </nav>
-            </Container>
+            {/* </Container> */}
         </header>
     )
 }

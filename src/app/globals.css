@@ -7,7 +7,7 @@
     --ksu-purple: hsl(275, 54%, 33%);
     --razzmatazz: hsl(335, 87%, 51%);
     --rajah: hsl(29, 99%, 67%);
-    --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0%, var(--royal-blue-dark) 100%);
+    --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0%, var(--ksu-purple) 100%);
     --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
 }
 
