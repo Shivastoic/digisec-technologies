@@ -6,6 +6,7 @@ import Header from "@/app/components/header/index";
 import Footer from "@/app/components/footer/index";
 
 import localFont from 'next/font/local';
+import ContactUs from "@/app/contact-us/index";
 
 // Load Syne font
 const syne = localFont({
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
                 />
 				<Header />
 				<main>{ children }</main>
+                <ContactUs />
 				<Footer />
 			</body>
 		</html>
