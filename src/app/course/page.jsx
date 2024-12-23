@@ -25,7 +25,7 @@ const data = {
 export default function Course() {
 
     return (
-        <section className="py-24">
+        <section className="py-24 bg-hero-section bg-no-repeat bg-cover">
             <Container>
                 <div className="flex items-center justify-center max-w-[1000px] mx-auto">
                     <div className="relative flex flex-col gap-10 py-16">
@@ -35,7 +35,7 @@ export default function Course() {
                         <div className="flex flex-col gap-6">
                             <VideoPlayer src={ data.video_src } />
                             <Link href={data.pdf_link} target="_blank">
-                                <button className="flex items-center gap-4 rounded-full border-2 border-blue_light text-blue_light hover:bg-blue_light hover:text-white duration-200 px-6 py-2 font-semibold font-sora">
+                                <button className="flex items-center gap-4 rounded-full border-2 border-white text-white hover:bg-blue-500 duration-200 px-6 py-2 font-semibold font-sora">
                                     {data.btn_label}
                                     <FaDownload />
                                 </button>

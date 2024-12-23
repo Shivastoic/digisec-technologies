@@ -149,7 +149,7 @@ export default function HeroSection() {
                             </div>
                             <div className="flex items-center lg:justify-start justify-center gap-4 w-full">
                                 <Link href="/about-us">
-                                    <button className="rounded-full px-4 md:px-6 py-2 border-2 border-white bg-white hover:bg-transparent hover:text-white duration-200 font-semibold">Learn More</button>
+                                    <button className="rounded-full px-4 md:px-6 py-2 border-2 border-white bg-white hover:bg-transparent hover:text-white duration-200 font-semibold">About Us</button>
                                 </Link>
                                 <Link href="/contact-us">
                                     <button className="group flex gap-3 items-center rounded-full px-4 py-2 border-2 text-white border-white hover:bg-transparent bg-blue_dark hover:text-white duration-200 font-semibold">

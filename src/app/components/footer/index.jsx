@@ -24,7 +24,7 @@ export default function Footer(){
 
     return (
 
-        <footer className="bg-footer-bg">
+        <footer className="bg-blue_dark">
             <div className="py-14 md:py-20">
                 <Container>
                     <div className="flex flex-wrap gap-10 justify-between">

@@ -37,22 +37,22 @@ export default function Blog() {
         <section className="py-24">
             <Container>
                 <div className="py-16 flex flex-col gap-20">
-                    <div className="py-4 border-y-2 md:border-y-4 border-black">
-                        <h2 className="text-3xl md:text-4xl font-sora font-medium">{ data.title }</h2>
+                    <div className="py-4 border-y-2 md:border-y-4 border-white/80">
+                        <h2 className="text-3xl md:text-4xl font-sora font-medium text-white/80">{ data.title }</h2>
                     </div>
                     <div className="flex flex-col gap-10">
                         <div className="flex flex-col-reverse md:flex-row gap-14">
                             <div className="md:flex-1 flex flex-col gap-8">
                                 <div className="flex flex-col gap-4">
-                                    <h3 className="text-2xl md:text-3xl font-sora font-medium">{ data.blog_title }</h3>
-                                    <p className="md:text-lg text-neutral-500 font-sora leading-relaxed">{ data.description_one }</p>
+                                    <h3 className="text-2xl md:text-3xl font-sora font-medium text-white/80">{ data.blog_title }</h3>
+                                    <p className="md:text-lg text-white/70 font-sora leading-relaxed">{ data.description_one }</p>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <h4 className="text-xl md:text-2xl font-sora font-medium">{ data.qestion_one }</h4>
-                                    <p className="text-sm md:text-base text-neutral-500 font-sora">{ data.answer_one }</p>
+                                    <h4 className="text-xl md:text-2xl font-sora font-medium text-white/80">{ data.qestion_one }</h4>
+                                    <p className="text-sm md:text-base text-white/70 font-sora">{ data.answer_one }</p>
                                 </div>
                             </div>
-                            <div className="md:flex-1 w-full h-full overflow-hidden">
+                            <div className="md:flex-1 w-full h-full rounded-lg overflow-hidden">
                                 <Image 
                                     src={ data.src }
                                     alt=""
@@ -64,19 +64,19 @@ export default function Blog() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
                             <div className="flex flex-col gap-3">
-                                <h4 className="text-xl md:text-2xl font-sora font-medium">{ data.qestion_two }</h4>
-                                <p className="text-sm md:text-base text-neutral-500 font-sora">{ data.answer_two }</p>
+                                <h4 className="text-xl md:text-2xl font-sora font-medium text-white/80">{ data.qestion_two }</h4>
+                                <p className="text-sm md:text-base text-white/70 font-sora">{ data.answer_two }</p>
                             </div>
                             <div className="flex flex-col gap-3">
-                                <h4 className="text-xl md:text-2xl font-sora font-medium">{ data.qestion_three }</h4>
-                                <p className="text-sm md:text-base text-neutral-500 font-sora">{ data.answer_three }</p>
+                                <h4 className="text-xl md:text-2xl font-sora font-medium text-white/80">{ data.qestion_three }</h4>
+                                <p className="text-sm md:text-base text-white/70 font-sora">{ data.answer_three }</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <h3 className="text-2xl md:text-3xl font-sora font-medium">{ data.blog_title_two }</h3>
-                        <p className="text-sm md:text-base text-neutral-500 font-sora font-medium">{ data.description_two }</p>
-                        <div className="bg-lime-200 p-6 rounded-lg">
+                        <h3 className="text-2xl md:text-3xl font-sora font-medium text-white/80">{ data.blog_title_two }</h3>
+                        <p className="text-sm md:text-base text-white/70 font-sora font-medium">{ data.description_two }</p>
+                        <div className="bg-yellow_logo p-6 rounded-lg">
                             <p className="text-neutral-600 md:text-lg font-sora"><span className="font-medium">{ data.bottom_title }</span>{ data.bottom_description }</p>
                         </div>
                     </div>
