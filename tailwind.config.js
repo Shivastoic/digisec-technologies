@@ -24,11 +24,13 @@ module.exports = {
 			},
 			backgroundImage: {
                 "hero-section": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
-                "footer-bg": "url('/assets/images/hero-bg.png'), var(--gradient-1)",
+                "body-bg": "var(--gradient-1)",
+                "footer-bg": "url('/assets/images/hero-bg.png')",
                 "development-bg": "url('/assets/images/hero-bg.png'), var(--gradient-2)",
             },
 			backgroundColor: {
 				"red_gradient": "var(--gradient-2)",
+				"blue_gradient": "var(--gradient-1)",
 			},
 			colors: {
 				"blue_dark": "var(--royal-blue-dark)",
@@ -41,6 +43,7 @@ module.exports = {
 			boxShadow: {
 				better_boxshadow: '0px 7px 29px 0px rgba(100, 100, 111, 0.2)',
 				big_boxshadow: "0px 22px 70px 4px rgba(28, 31, 96, 0.56)",
+				medium_boxshadow: "0px 25px 50px -12px rgba(255, 255, 255, 0.25)",
 			},
 		},
 	},

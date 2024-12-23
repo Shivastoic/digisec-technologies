@@ -9,14 +9,14 @@ export default function ContactForm(){
                     required 
                     name="fname"
                     placeholder="First Name"
-                    className="border-2 px-4 py-2 border-neutral-400 placeholder:text-neutral-500 rounded-lg w-full"
+                    className="borde px-4 py-2 placeholder:text-white/80 text-white bg-white/30 rounded-lg w-full focus:outline-none focus:ring-1 focus:ring-white"
                 />
                 <input 
                     type="text" 
                     required 
                     name="lname"
                     placeholder="Last Name"
-                    className="border-2 px-4 py-2 border-neutral-400 placeholder:text-neutral-500 rounded-lg w-full"
+                    className=" px-4 py-2 placeholder:text-white/80 text-white bg-white/30 rounded-lg w-full focus:outline-none focus:ring-1 focus:ring-white"
                 />
             </div>
             <input 
@@ -24,14 +24,14 @@ export default function ContactForm(){
                 required 
                 name="email"
                 placeholder="Email"
-                className="border-2 px-4 py-2 border-neutral-400 placeholder:text-neutral-500 rounded-lg"
+                className=" px-4 py-2 placeholder:text-white/80 text-white bg-white/30 rounded-lg focus:outline-none focus:ring-1 focus:ring-white"
             />
             <input 
                 type="number" 
                 required 
                 name="phone"
                 placeholder="Phone No."
-                className="border-2 px-4 py-2 border-neutral-400 placeholder:text-neutral-500 rounded-lg"
+                className=" px-4 py-2 placeholder:text-white/80 text-white bg-white/30 rounded-lg focus:outline-none focus:ring-1 focus:ring-white"
             />
             <textarea 
                 type="number" 
@@ -39,9 +39,9 @@ export default function ContactForm(){
                 name="message"
                 placeholder="Message"
                 rows={ 5 }
-                className="border-2 px-4 py-2 border-neutral-400 placeholder:text-neutral-500 rounded-lg resize-none"
+                className=" px-4 py-2 bg-white/30 placeholder:text-white/80 text-white rounded-lg resize-none focus:outline-none focus:ring-1 focus:ring-white"
             />
-            <button className="px-6 py-2 border-2 hover:bg-blue_light hover:text-white duration-300 border-blue_light text-blue_light rounded-full w-fit font-medium font-sora">Submit</button>
+            <button className="px-6 py-2 border-2 hover:bg-blue-500 text-white duration-300 border-white rounded-full w-fit font-medium font-sora">Submit</button>
         </form>
 
     )

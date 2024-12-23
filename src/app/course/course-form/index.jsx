@@ -87,7 +87,7 @@ export default function CourseForm() {
 					value={formData.Name}
 					onChange={handleChange}
 					title="Name must be at least 2 characters"
-					className="px-4 py-2 border-2 border-neutral-600 rounded-lg w-full bg-white placeholder:text-neutral-500"
+					className="px-4 py-2 border-2 border-white/20 rounded-lg w-full bg-white/20 placeholder:text-white/80 text-white focus:outline-none focus:ring-1 focus:ring-white"
 				/>
 				<input
 					placeholder="Enter your email"
@@ -98,7 +98,7 @@ export default function CourseForm() {
 					onChange={handleChange}
 					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
 					title="Invalid email address"
-					className="px-4 py-2 border-2 border-neutral-600 rounded-lg w-full bg-white placeholder:text-neutral-500"
+					className="px-4 py-2 border-2 border-white/20 rounded-lg w-full bg-white/20 placeholder:text-white/80 text-white focus:outline-none focus:ring-1 focus:ring-white"
 				/>
 			</div>
 			<div className="flex gap-4">
@@ -111,31 +111,31 @@ export default function CourseForm() {
 					onChange={handleChange}
 					pattern="\d{10,}"
 					title="Phone number must be at least 10 digits"
-					className="px-4 py-2 border-2 border-neutral-600 rounded-lg w-full bg-white placeholder:text-neutral-500"
+					className="px-4 py-2 border-2 border-white/20 rounded-lg w-full bg-white/20 placeholder:text-white/80 text-white focus:outline-none focus:ring-1 focus:ring-white"
 				/>
 				<select 
 					name="Interested" 
 					required
 					value={formData.Interested}
 					onChange={handleChange}
-					className="border-2 border-neutral-600 rounded-lg px-4 py-2 w-full bg-white placeholder:text-neutral-500"
+					className="border-2 border-white/20 rounded-lg px-4 py-2 w-full bg-white/20 placeholder:text-white/80 text-white focus:outline-none focus:ring-1 focus:ring-white"
 				>
-					<option value="">Select Interest</option>
-					<option value="Courses">Courses</option>
-					<option value="Services">Services</option>
+					<option className='text-black' value="">Select Interest</option>
+					<option className='text-black' value="Courses">Courses</option>
+					<option className='text-black' value="Services">Services</option>
 				</select>
 			</div>
 			<div className="step active">
 				<textarea
 					placeholder="Share any additional information or questions"
-					className="px-4 py-2 border-2 border-neutral-600 rounded-lg resize-none w-full bg-white placeholder:text-neutral-500"
+					className="px-4 py-2 border-2 border-white/20 rounded-lg resize-none w-full bg-white/20 placeholder:text-white/80 text-white focus:outline-none focus:ring-1 focus:ring-white"
 					name="Feedback"
 					rows={ 5 }
 					value={formData.Feedback}
 					onChange={handleChange}
 				></textarea>
 			</div>
-			<button type="submit" disabled={isSubmitting} className="flex items-center gap-4 rounded-full border-2 border-blue_light text-blue_light hover:bg-blue_light hover:text-white duration-200 px-6 py-2 font-semibold font-sora w-fit">
+			<button type="submit" disabled={isSubmitting} className="flex items-center gap-4 rounded-full border-2 border-white text-white hover:bg-blue-500 duration-200 px-6 py-2 font-semibold font-sora w-fit">
 				{isSubmitting ? 'Submitting...' : 'Submit'}
 			</button>
         </form>

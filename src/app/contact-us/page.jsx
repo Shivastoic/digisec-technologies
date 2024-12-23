@@ -25,15 +25,15 @@ export default function ContactUs(){
     return (
 
         <section className="py-24">
-            <div className="bg-[url('/assets/images/testimonial-bg.svg')] bg-no-repeat bg-cover bg-center">
+            <div className="bg-no-repeat bg-cover bg-center">
                 <Container>
                     <div className="relative flex flex-col gap-10 py-8">
                         <h2 className="text-4xl md:text-5xl text-yellow_title text-center font-sora font-semibold">{ data.title }</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 pt-4 pb-8 bg-white rounded-xl relative z-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 pt-4 pb-8 bg-white/15 backdrop-blur-md rounded-xl relative z-10">
                             <div className="flex flex-col gap-10">
                                 <div className="flex flex-col gap-1">
-                                    <h3 className="text-3xl text-neutral-700 font-sora font-semibold">{ data.subtitle }</h3>
-                                    <p className="text-neutral-500 font-sora">{ data.subtitle_two }</p>
+                                    <h3 className="text-3xl text-white font-sora font-semibold">{ data.subtitle }</h3>
+                                    <p className="text-white/80 font-sora">{ data.subtitle_two }</p>
                                 </div>
                                 <ContactForm />
                             </div>
@@ -50,12 +50,12 @@ export default function ContactUs(){
                                     ></iframe>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className="text-xl text-neutral-700 font-sora font-semibold">Registered Address</h3>
-                                    <div className="space-y-1">
-                                        <p className="text-neutral-500 font-sora font-medium">Digisec Technologies</p>
-                                        <p className="text-neutral-500 font-sora font-medium">62 C, MIG, Sector-100, Noida, 201301</p>
-                                        <p className="text-neutral-500 font-sora font-medium">contact@digisectechnologies.com</p>
-                                        <p className="text-neutral-500 font-sora font-medium">Phone: 0120-4541812</p>
+                                    <h3 className="text-xl text-white font-sora font-semibold">Registered Address</h3>
+                                    <div className="space-y-1 text-white/80">
+                                        <p className=" font-sora font-medium">Digisec Technologies</p>
+                                        <p className=" font-sora font-medium">62 C, MIG, Sector-100, Noida, 201301</p>
+                                        <p className=" font-sora font-medium">contact@digisectechnologies.com</p>
+                                        <p className=" font-sora font-medium">Phone: 0120-4541812</p>
                                     </div>
                                 </div>
                             </div>

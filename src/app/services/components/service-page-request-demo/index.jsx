@@ -5,7 +5,7 @@ export default function ServiceRequestDemo({ src, description }) {
 
     return (
 
-        <section className="bg-blue-800 flex flex-col md:flex-row">
+        <section className="bg-blue_light flex flex-col md:flex-row">
             <div className="md:w-1/2 flex flex-col justify-center gap-6 px-4 py-6 sm:p-10 md:p-16 lg:p-20 xl:p-24">
                 <h3 className="text-4xl lg:text-5xl text-white font-sora font-semibold">Request A Demo</h3>
                 <p className="md:text-lg text-neutral-100 font-sora leading-relaxed">{ description }</p>

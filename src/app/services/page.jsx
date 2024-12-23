@@ -30,8 +30,8 @@ export default function Services(){
 
     return(
 
-        <section className="pb-10 pt-24 md:pb-16 bg-neutral-100">
-            <div className="py-8 md:py-16 flex flex-col gap-16 bg-neutral-100">
+        <section className="pb-10 pt-24 md:pb-16 bg-hero-section">
+            <div className="py-8 md:py-16 flex flex-col gap-16">
                 <Container>
                     <div className="flex flex-col gap-8">
                         <h2 className="text-4xl md:text-5xl text-yellow_title font-sora font-medium">{ data.title }</h2>

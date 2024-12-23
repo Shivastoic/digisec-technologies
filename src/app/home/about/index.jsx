@@ -1,10 +1,11 @@
 // IMPORT REACT ICONS
-import { FaAngleRight } from "react-icons/fa"
+import { FaAngleRight, FaArrowUp } from "react-icons/fa"
 
 // IMPORT COMPONENTS
 import Container from "@/app/components/container"
 import Image from "next/image"
 import Link from "next/link"
+import AboutSlider from "@/app/home/about/about-slider/index"
 
 // HARDCODED DATA
 const data = {
@@ -20,15 +21,24 @@ const aboutcarddata = [
     {
 
         title: "Our Vision",
-        description: "To be a Trusted Digital Transformation Partners for our customers.",
+        description: "Our vision is to drive digital innovation and shape a future where businesses thrive through technology. We aim to be globally recognized for delivering transformative and sustainable solutions. Through excellence and collaboration, we empower progress in a digital world.",
 
     },
     {
 
         title: "Our Mission",
-        description: "To be a growth partner by transforming, managing and securing digital footprint of our customers.",
+        description: "Our mission is to be a trusted partner in digital transformation for our customers. We focus on delivering innovative, scalable, and customer-centric solutions. By fostering trust and excellence, we aim to empower businesses to thrive in the digital age.",
 
     },
+
+]
+
+const slider_data = [
+
+    "/assets/images/about/slider/audit.jpg",
+    "/assets/images/about/slider/cyber-security.png",
+    "/assets/images/about/slider/cloud.jpg",
+    "/assets/images/about/slider/testing.avif",
 
 ]
 
@@ -38,47 +48,55 @@ export default function AboutSection(){
 
         <section className="py-8 md:py-16" id="about-section">
             <Container>
-                <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-16">
-                    <div className="md:flex-1 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                    <div className="relative">
+                        <div className="w-full aspect-[5/4] rounded-xl bg-white/15 p-2">
+                            <AboutSlider 
+                                slider_data={ slider_data }
+                            />
+                        </div>
                         <Image 
-                            src={ data.about_img_src }
+                            src="/assets/images/hero-shape-2.png"
                             alt=""
                             width={ 1000 }
                             height={ 1000 }
-                            className="w-full h-full relative z-10"
-                        />
-                        <Image 
-                            src="/assets/images/dots-blue.png"
-                            alt=""
-                            width={ 1000 }
-                            height={ 1000 }
-                            className="w-40 absolute top-10 left-10 hidden md:block"
+                            className="w-full absolute top-8 -left-16 hidden md:block z-0 scale-x-[-1]"
                         />
                     </div>
-                    <div className="md:flex-1 flex flex-col justify-center items-center gap-8">
+                    <div className="flex flex-col justify-center items-center gap-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {
 
                                 aboutcarddata.map( ( data, index ) => (
 
-                                    <div key={ index } className="rounded-lg shadow-better_boxshadow bg-neutral-50 p-6 flex flex-col gap-4">
-                                        <h2 className="text-3xl text-yellow_title text-center font-sora font-medium">{ data.title }</h2>
-                                        <p className="text-center font-syne font-medium">{ data.description }</p>
+                                    <div
+                                        key={index}
+                                        className="rounded-lg shadow-better_boxshadow bg-white/20 backdrop-blur-md p-6 flex flex-col gap-4 border-2 border-transparent hover:border-white/20 hover:shadow-medium_boxshadow transition-all duration-300"
+                                    >
+                                        <h2 className="text-3xl text-yellow_title text-center md:text-left font-sora font-medium">
+                                            {data.title}
+                                        </h2>
+                                        <p className="text-center md:text-left font-syne font-medium text-white/90">
+                                            {data.description}
+                                        </p>
                                     </div>
 
                                 ))
 
                             }
                         </div>
-                        <p className="text-lg font-syne font-medium">
+                        <p className="text-lg text-white font-syne font-medium">
                             We provide effective
-                            <span className="text-yellow_title"> Cloud Transformation, Cyber Security Solution and Consulting Services </span>
+                            <span className="text-yellow_title"> Cloud Transformation, Cyber Security Solution, Consulting Services and Development Services </span>
                             to our Customers, spread across PAN India.
                         </p>
                         <Link href={ data.btn_link }>
-                            <button className="flex items-center gap-2 rounded-full border-2 border-blue_light text-blue_light hover:bg-blue_light hover:text-white duration-200 px-6 py-2 text-sm font-medium font-sora">
-                                { data.btn_label }
-                                <FaAngleRight />
+                            <button className="rounded-full relative px-4 py-2 bg-white group border-2 border-white text-white text-lg">
+                                <div className="bg-yellow_title rounded-full absolute top-0 left-0 group-hover:top-1 group-hover:left-1 duration-200 w-full h-full flex gap-2 items-center justify-center">
+                                    { data.btn_label }
+                                    <span className="text-white text-lg rotate-45 group-hover:rotate-90 duration-200"><FaArrowUp /></span>
+                                </div>
+                                Learn Moreeeeeee
                             </button>
                         </Link>
                     </div>

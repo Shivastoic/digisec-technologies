@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
     return (
 
 		<html lang="en">
-			<body className={`${sora.variable} ${syne.variable} antialiased`}>
+			<body className={`${sora.variable} ${syne.variable} antialiased bg-body-bg`}>
                 <NextTopLoader 
                     color="#FF885B"
                     showSpinner={false}

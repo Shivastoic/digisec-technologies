@@ -125,7 +125,7 @@ export default function Development(){
 
     return (
 
-        <section className="bg-neutral-100 relative py-24">
+        <section className="bg-hero-section bg-cover bg-no-repeat bg-center relative py-24">
             <div className="relative z-20 space-y-16">
                 <Container>
                     <div className="flex flex-col gap-10 py-16">
@@ -157,7 +157,7 @@ export default function Development(){
                     description={ data.request_description }
                 />
             </div>
-            <div className="hidden md:block absolute bottom-[800px] right-44">
+            <div className="hidden md:block absolute bottom-[1060px] right-6">
                 <Image 
                     src="/assets/images/circle.png"
                     alt=""

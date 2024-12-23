@@ -20,7 +20,7 @@ export default function VideoPlayer({ src }) {
     };
 
     return (
-        <div className="relative flex items-center justify-center rounded-xl overflow-hidden p-1 border-2 border-blue_light">
+        <div className="relative flex items-center justify-center rounded-xl overflow-hidden p-1 border-2 border-white/15">
             {/* Video Player */}
             <video
                 ref={videoRef}

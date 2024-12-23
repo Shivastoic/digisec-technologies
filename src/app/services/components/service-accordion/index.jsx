@@ -9,16 +9,16 @@ import VAPTService from "@/app/services/vapt-services/index";
 
 const AccordionItem = ({ id, title, isOpen, onToggle, children }) => {
     return (
-        <div className="border-2 border-neutral-200 rounded-lg">
+        <div className="border-2 border-white/15 rounded-xl">
             <button
                 onClick={() => onToggle(id)}
-                className={`w-full flex justify-between items-center text-left px-4 py-3 md:text-lg font-medium focus:outline-none hover:text-white hover:bg-blue_light duration-150 ${ isOpen ? "bg-blue_light text-white rounded-t-lg" : "bg-gray-100 rounded-lg" }`}
+                className={`w-full flex justify-between items-center text-left px-4 py-3 md:text-lg font-medium focus:outline-none text-white hover:bg-blue_light duration-150 ${ isOpen ? "bg-blue_light rounded-t-lg" : "bg-white/20 backdrop-blur-md rounded-xl" }`}
             >
                 <span>{title}</span>
                 {isOpen ? <FaChevronUp size={14} /> : <FaChevronDown size={14} />}
             </button>
             {isOpen && (
-                <div className="px-4 py-4 bg-white">
+                <div className="px-4 py-4 bg-white/15 backdrop-blur-md">
                     {children}
                 </div>
             )}
@@ -63,14 +63,14 @@ export default function ServiceAccordion() {
             >
                 <SecurityConsultingAudit />
             </AccordionItem>
-            <AccordionItem
+            {/* <AccordionItem
                 id={4}
                 title="VAPT services"
                 isOpen={openAccordions.includes(4)}
                 onToggle={toggleAccordion}
             >
                 <VAPTService />
-            </AccordionItem>
+            </AccordionItem> */}
         </div>
     );
 }
